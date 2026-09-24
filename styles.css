@@ -11,7 +11,7 @@ html{color-scheme:only light;scroll-behavior:smooth;overflow-x:hidden;}
   --muted:#686A6D;
   --line:#DCDCD6;
   --header-h:88px;
-  --serif:'Instrument Serif',serif;
+  --serif:'Playfair Display',serif;
   --sans:'Sora',sans-serif;
 }
 body{font-family:var(--sans);background:var(--paper);color:var(--text-dark);overflow-x:hidden;line-height:1.6;}
@@ -75,7 +75,7 @@ header.site{
 header.site.sc{background:rgba(20,22,26,.94);backdrop-filter:blur(10px);border-bottom-color:rgba(140,122,78,.2);}
 .h-inner{max-width:1280px;margin:0 auto;padding:20px 32px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;}
 .h-brand{justify-self:start;display:flex;flex-direction:column;align-items:center;text-align:center;line-height:1.1;}
-.h-brand-main{display:block;font-family:var(--serif);font-weight:400;font-size:1.42rem;letter-spacing:.045em;color:var(--paper);white-space:nowrap;}
+.h-brand-main{display:block;font-family:var(--serif);font-weight:400;font-size:1.42rem;color:var(--paper);white-space:nowrap;}
 .h-brand-sub{display:block;font-family:var(--sans);font-size:.62rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-light);margin-top:2px;white-space:nowrap;}
 nav.desk{justify-self:center;display:flex;gap:2.1rem;}
 nav.desk a{font-size:.79rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:rgba(247,247,245,.85);position:relative;padding:.3rem 0;}
@@ -127,6 +127,7 @@ nav.desk a:hover::after{width:100%;}
 .hero-tag{background:transparent;border:1.5px solid var(--accent);color:var(--accent-light);font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.42rem 1rem;}
 .hero-ctas{display:flex;gap:.9rem;flex-wrap:wrap;justify-content:center;}
 @media(max-width:600px){.hero-ctas{flex-direction:column;align-items:center;}.hero-ctas .btn{width:100%;max-width:300px;}.hero-inner .eyebrow::before{display:none;}}
+@media(max-width:400px){.hero-inner .eyebrow{font-size:.62rem;letter-spacing:.09em;white-space:nowrap;}}
 
 /* ============ ATENCION PERSONALIZADA ============ */
 #atencion{background:var(--ink-2);color:var(--paper);text-align:center;}
